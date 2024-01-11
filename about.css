@@ -1,0 +1,310 @@
+/* styles/custom.css */
+html, body, h2, h3, p {
+    margin: 0;
+    margin: 0;
+}
+
+/* Custom styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding-top: 0; /* Remove padding for the top */
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the top */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #f8f9fa; /* Navbar background color */
+    padding: 15px 10px; /* Padding around navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the navbar */
+    opacity: 0;
+    animation: fadeIn ease-in-out forwards;
+}
+
+.animate-on-load {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-brand {
+    font-weight: bold; /* Brand font weight */
+    color: #333; /* Brand text color */
+    font-size: 1.5rem; /* Brand font size */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Navbar links color */
+    font-size: 1.1rem; /* Font size for navbar links */
+    margin-right: 15px; /* Spacing between links */
+    transition: color 0.3s; /* Smooth transition for link color change */
+}
+
+/* Change link color on hover */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Active link style */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Active link color */
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler-icon {
+    color: #333; /* Toggler icon color */
+}
+
+/* Background color for the dropdown menu */
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown menu background color */
+}
+
+/* Dropdown link color */
+.dropdown-item {
+    color: #333; /* Dropdown link color */
+}
+
+/* Header styles */
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+header.jumbotron {
+    background-color: #9A8873;
+    color: #fff;
+    text-align: center;
+}
+.jumbotron h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, tranform 0.5s ease;
+}
+.jumbotron.is-visible h1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+header.jumbotron h1 {
+    font-size: 3em;
+}
+@media (max-width: 767px) {
+    header.jumbotron {
+        padding: 100px 0;
+    }
+}
+#general {
+    padding: 50px 0;
+    text-align: left;
+    background-color: #121212 !important;
+    color:#fff;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+#general h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+#general p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#general h2,
+#general p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#general.is-visible h2,
+#general.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+section#general {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+section#general h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+section#general p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#early-life {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+#early-life h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+#early-life p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#early-life h2,
+#early-life p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#early-life.is-visible h2,
+#early-life.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+section#early-life {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+section#early-life h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+section#early-life p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#education {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+#education h2,
+#education h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+#education p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#education h2,
+#education h3,
+#education p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#education.is-visible h2,
+#education.is-visible h3,
+#education.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+section#education {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+section#education h2,
+section#education h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+section#education p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#future-goals {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+#future-goals h2,
+#future-goals h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+#future-goals p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#future-goals h2,
+#future-goals h3,
+#future-goals p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#future-goals.is-visible h2,
+#future-goals.is-visible h3,
+#future-goals.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+section#future-goals {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+section#future-goals h2,
+section#future-goals h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+section#future-goals p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Footer styles */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}

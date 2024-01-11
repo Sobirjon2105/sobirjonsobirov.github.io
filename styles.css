@@ -1,0 +1,336 @@
+/* Global Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+/* popup message */
+.overlay {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.popup {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(255, 255, 255, 0.5);
+    color: #fff;
+}
+.popup h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+.popup p {
+    margin: 20px;
+}
+button#okButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+button#okButton:hover {
+    background-color: #0056b3;
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Navbar background color */
+    padding: 15px 10px; /* Padding around navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the navbar */
+    opacity: 0;
+    animation: fadeIn is ease-in-out forwards;
+}
+.animate-on-load {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-brand {
+    font-weight: bold; /* Brand font weight */
+    color: #333; /* Brand text color */
+    font-size: 1.5rem; /* Brand font size */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Navbar links color */
+    font-size: 1.1rem; /* Font size for navbar links */
+    margin-right: 15px; /* Spacing between links */
+    transition: color 0.3s; /* Smooth transition for link color change */
+}
+
+/* Change link color on hover */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Active link style */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Active link color */
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler-icon {
+    color: #333; /* Toggler icon color */
+}
+
+/* Background color for the dropdown menu */
+.dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown menu background color */
+}
+
+/* Dropdown link color */
+.dropdown-item {
+    color: #333; /* Dropdown link color */
+}
+
+/* Social icons styles */
+.social-icons {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #333; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+/* Styling on hover */
+.social-icons a:hover {
+    color: #f8f9fa; /* Change color on hover */
+}
+.pronunciation-link {
+    color: #fff;
+    text-decoration: none;
+}
+.pronunciation-link:hover {
+    text-align: underline;
+}
+/* Styling for the About Me section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+  
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+  
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#about h2,
+#about p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#about.is-visible h2,
+#about.is-visible p {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Styling for the daily blog section*/
+#blog {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+#blog h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#blog p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#blog h2,
+#blog p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#blog.is-visible h2,
+#blog.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Styling for the projects section*/
+#projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #121212 !important;
+    color: #fff;
+    border-radius: 15px;
+}
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#projects p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#projects h2,
+#projects p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#projects.is-visible h2,
+#projects.is-visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Header Styling */
+header.jumbotron {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+/* Define initial states for elements within .jumbotron */
+.jumbotron img,
+.jumbotron h1,
+.jumbotron p,
+.jumbotron a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Define states when is-visible class is applied */
+.jumbotron.is-visible img,
+.jumbotron.is-visible h1,
+.jumbotron.is-visible p,
+.jumbotron.is-visible a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header.jumbotron h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header.jumbotron p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* About Section Styling */
+section#about {
+    background-color: #fff;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+section#about h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section#about p {
+    text-align: center;
+}
+
+/* Blog Section Styling */
+section#blog {
+    background-color: #fff;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+section#blog h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+section#blog p {
+    text-align: center;
+}
+
+/* Projects Section Styling */
+section#projects {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+section#projects h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+section#projects p {
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+    header.jumbotron {
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobirjon's Portfolio</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- This is a popup message to the user -->
+    <div id="overlay" class="overlay">
+      <div class="popup">
+        <h2>Welcome To The Website!</h2>
+        <p>The website is still under development. The only thing that works for now the main page. I hope you enjoy your stay.</p>
+        <button id="okButton">OK</button>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <!-- Add more nav items as needed -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Useful Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+      <div class="container">
+        <img
+          src="myPhoto.jpeg"
+          class="img-fluid rounded-circle"
+          alt="My Picture"
+          width="200"
+          height="200"
+        />
+        <h1>Sobirjon Sobirov</h1>
+        <p>Software Engineer</p>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sobirjon-sobirov" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Sobirjon2105" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm
+            <a href="pronunciation.html" class="pronunciation-link"><u>Sobirjon</u></a
+            >, a passionate and innovative software engineer dedicated to
+            crafting efficient and user-friendly solutions.
+          </p>
+          <p>
+            Proficient in Java, HTML, CSS. Familiar with JavaScript, Python, and
+            C++. I specialize in full-stack developent, with expertise in
+            frameworks like React and Spring Boot. I have a solid understanding
+            of database management using SQL and NoSQL databases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Daily Blog</h2>
+          <p>
+            Join me on a daily exploration of the ever-evolving world of
+            technology. This blog is a window into my daily discoveries,
+            insights, and experiences in the realm of technology, lifestyle,
+            personal growth, etc.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Projects</h2>
+          <p>
+            Explore a showcase of my diverse projects spanning software
+            development, web applications, and innovative tech solutions. Each
+            project reflects my commitment to creativity, problem-solving, and
+            delivering impactful solutions in the world of technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-3">
+      <p>&copy; 2023 Your Portfolio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
